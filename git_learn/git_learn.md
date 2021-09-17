@@ -1,7 +1,18 @@
 # Git 学习 
 I found a interesting gaming for learnning git [`git game`](https://learngitbranching.js.org/?locale=zh_CN)
 
-[toc]
+- [常见命令](#常见命令)
+  - [git add](#git add)
+  - [git commit](#git commit)
+  - [git branch](#git branch)
+  - [git checkout](#git checkout)
+  - [git merge](#git merge)
+  - [git rebase](#git rebase)
+  - [git reset and git revert](#git reset and git revert)
+  - [git fetch](#git fetch)
+  - [git pull](#git pull)
+  - [git push](#git push)
+
 
 ## 常见命令
 - `git add`
