@@ -36,6 +36,7 @@ I found a interesting gaming for learnning git [`git game`](https://learngitbran
 **eg.**`git branch bugFix`
 
 `git branch -f main HEAD~3` 将main分支移动到HEAD的第3级父提交
+
 ![](https://github.com/KiteChin/Photo-cloud/raw/master/git_learn/screenshot-2021-09-17%2016:12:10.jpg)
 
 ---
@@ -48,6 +49,7 @@ I found a interesting gaming for learnning git [`git game`](https://learngitbran
 `git checkout` 实际上是改变HEAD的指向
 
 **eg.**`git checkout hash`将HEAD指向hash值所对应到记录
+
 ![](https://github.com/KiteChin/Photo-cloud/raw/master/git_learn/screenshot-2021-09-17%2016:02:59.png)
 
 ---
