@@ -1,5 +1,7 @@
 # Git 学习 
-I found a interesting gaming for learnning git [`git game`](https://learngitbranching.js.org/?locale=zh_CN)
+Git是Linus Torvalds 为了帮助管理Linux 内核开发而开发的一个开放源码的版本控制软件，它可以帮助我们方便管理项目，同时也可以使用Git将本地仓库推送至Github
+
+推荐一个Git学习的游戏 [`git game`](https://learngitbranching.js.org/?locale=zh_CN)
 
 * [常见命令](#常见命令)
   - [git add](#git-add)
@@ -27,14 +29,14 @@ I found a interesting gaming for learnning git [`git game`](https://learngitbran
 
 ---
 
-### git add
+#### git add
 `git add` 将文件添加到暂存区
 
 **eg.** `git add -A`
 
 ---
 
-### git commit
+#### git commit
 `git commit` 将暂存区的文件提交到git库里
 
 **eg.**`git commit -m "comment"` `git commit -am "comment"`
