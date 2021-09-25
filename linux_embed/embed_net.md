@@ -1,9 +1,25 @@
 # Linux下与嵌入式Linux搭建NFS服务
 
-[toc]
+<!-- vim-markdown-toc GFM -->
+
+* [Linux通过shell链接wifi](#linux通过shell链接wifi)
+	* [安装Network Manager](#安装network-manager)
+	* [查看网络设备](#查看网络设备)
+	* [打开WIFI](#打开wifi)
+	* [扫描附近的WIFI](#扫描附近的wifi)
+	* [连接WIFI](#连接wifi)
+* [搭建NFS服务环境](#搭建nfs服务环境)
+	* [Ubuntu安装NFS服务](#ubuntu安装nfs服务)
+	* [配置NFS](#配置nfs)
+	* [嵌入式Linux安装NFS客户端](#嵌入式linux安装nfs客户端)
+	* [通过NFS查看共享目录](#通过nfs查看共享目录)
+	* [通过NFS挂载共享目录](#通过nfs挂载共享目录)
+
+<!-- vim-markdown-toc -->
 
 ## Linux通过shell链接wifi
-### 安装NetworkManager
+
+### 安装Network Manager
 
 `sudo apt install NetworkManager`  
 
