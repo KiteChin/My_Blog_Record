@@ -3,47 +3,47 @@ Git是Linus Torvalds 为了帮助管理Linux 内核开发而开发的一个开�
 
 推荐一个Git学习的游戏 [`git game`](https://learngitbranching.js.org/?locale=zh_CN)
 
-* [常见命令](#常见命令)
-  - [git add](#git-add)
-  - [git commit](#git-commit)
-  - [git branch](#git-branch)
-  - [git checkout](#git-checkout)
-  - [git merge](#git-merge)
-  - [git rebase](#git-rebase)
-  - [git reset and git revert](#git-reset-and-git-revert)
-  - [git fetch](#git-fetch)
-  - [git pull](#git-pull)
-  - [git push](#git-push)
+* ## [常见命令](#常见命令)
+  - ### [git add](#git-add)
+  - ### [git commit](#git-commit)
+  - ### [git branch](#git-branch)
+  - ### [git checkout](#git-checkout)
+  - ### [git merge](#git-merge)
+  - ### [git rebase](#git-rebase)
+  - ### [git reset and git revert](#git-reset-and-git-revert)
+  - ### [git fetch](#git-fetch)
+  - ### [git pull](#git-pull)
+  - ### [git push](#git-push)
 
 
 ## 常见命令
 - `git add`
-- `git commit`
-- `git branch`
-- `git checkout`
-- `git merge`
-- `git rebase`
-- `git fetch`
-- `git pull`
-- `git push`
+ `git commit`
+ `git branch`
+ `git checkout`  
+ `git merge`
+ `git rebase`
+ `git fetch`
+ `git pull`  
+ `git push`
 
 ---
 
-#### git add
+### git add
 `git add` 将文件添加到暂存区
 
 **eg.** `git add -A`
 
 ---
 
-#### git commit
+### git commit
 `git commit` 将暂存区的文件提交到git库里
 
 **eg.**`git commit -m "comment"` `git commit -am "comment"`
 
 ---
 
-#### git branch
+### git branch
 `git branch` 创建分支( 不切换 )
 
 **eg.**`git branch bugFix`
@@ -54,7 +54,7 @@ Git是Linus Torvalds 为了帮助管理Linux 内核开发而开发的一个开�
 
 ---
 
-#### git checkout 
+### git checkout 
 `git checkout` 切换分支( -b 创建并切换分支 )
 
 **eg.**`git checkout bugFix` `git checkout -b newBugFix` `git checkout origin/main`
@@ -67,7 +67,7 @@ Git是Linus Torvalds 为了帮助管理Linux 内核开发而开发的一个开�
 
 ---
 
-#### git merge
+### git merge
 `git merge` 合并分支
 
 **eg.**`git merge bugFix`将bugFix合并到main里( 两分支不再同一路 )
@@ -76,7 +76,7 @@ Git是Linus Torvalds 为了帮助管理Linux 内核开发而开发的一个开�
 
 ---
 
-#### git rebase
+### git rebase
 `git rebase` 另一种合并分支命令
 
 ![1jpg](https://github.com/KiteChin/Photo-cloud/raw/master/git_learn/screenshot-2021-09-17%2013:55:03.png)
@@ -93,7 +93,7 @@ Git是Linus Torvalds 为了帮助管理Linux 内核开发而开发的一个开�
 
 ---
 
-#### git reset and git revert
+### git reset and git revert
 `git reset` 将当前分支退回之前到提交记录
 
 **eg.**`git reset HEAD~1` `git reset hash`
@@ -110,7 +110,7 @@ PS.上图中C2'与C1记录是一样的
 
 ---
 
-#### git fetch
+### git fetch
 `git fetch` 拉取远程仓库
 
 ![](https://github.com/KiteChin/Photo-cloud/raw/master/git_learn/screenshot-2021-09-17%2016:54:47.jpg)
@@ -121,7 +121,7 @@ PS.上图中C2'与C1记录是一样的
 
 ---
 
-#### git pull
+### git pull
 在`git fetch`后，你可以通过以下命令像合并本地分支那样来合并远程分支  
 
 - `git cheery-pick origin/main`
@@ -138,7 +138,7 @@ PS.上图中C2'与C1记录是一样的
 
 ---
 
-#### git push
+### git push
 `git push`将本地变更上传到远程仓库，并在远程仓库合并你的新的提交记录
 
 ![](https://github.com/KiteChin/Photo-cloud/raw/master/git_learn/screenshot-2021-09-17%2017:45:21.jpg)
