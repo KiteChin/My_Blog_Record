@@ -2,6 +2,17 @@
 
 ### fork函数
 
+<!-- vim-markdown-toc GFM -->
+
+* [exec函数](#exec函数)
+* [exit](#exit)
+* [进程状态](#进程状态)
+* [进程间的通信](#进程间的通信)
+	* [无名管道](#无名管道)
+	* [有名管道](#有名管道)
+
+<!-- vim-markdown-toc -->
+
 `fork`函数会复制一份当前进程,并返回`pid_t`类型的参数。
 
 ```
@@ -84,6 +95,30 @@ void exit(int status);
 void _exit(int status);
 ```
 
-`exit`: exit函数会对输入输出流进行判断，释放所占用的资源以及清空缓冲区。
+`exit`: exit函数会对输入输出流进行判断，释放所占用的资源以及清空缓冲区。子进程将退出状态传递给父进程，父进程需要使用`wait()`来接收此状态码后才会销毁子进程的任务结构体。
 
-`_exit`: 立刻结束进程不检查缓冲区。
+`_exit`: 立刻结束进程并销毁进程的虚拟内存和任务结构体不检查缓冲区。
+
+
+### 进程状态
+- `TASK_RUNNING`: 就绪/运行状态
+- `TASK_INTERRUPTIBLE`: 可中断睡眠状态
+- `TASK_UNINTERRUPTIBLE`: 不可中断睡眠状态
+- `TASK_TRACED`: 调试态
+- `TASK_STOPPED`: 暂停状态
+- `EXIT_ZOMBIE`: 僵尸状态
+- `EXIT_DEAD`: 死亡态
+
+### 进程间的通信
+#### 无名管道
+
+```
+#include <unistd.h>
+int pipe(int fd[2]);
+
+```
+
+
+#### 有名管道
+
+
